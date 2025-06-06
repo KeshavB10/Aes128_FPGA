@@ -8,11 +8,11 @@ set_property PACKAGE_PIN R2 [get_ports reset_n]
 set_property IOSTANDARD LVCMOS33 [get_ports reset_n]
 set_property PULLUP true [get_ports reset_n]
 
-## Encryption start switch (recommend T1)
+## Encryption start switch 
 set_property PACKAGE_PIN T1 [get_ports start_encrypt]
 set_property IOSTANDARD LVCMOS33 [get_ports start_encrypt]
 
-## Decryption start switch (recommend T2)
+## Decryption start switch 
 set_property PACKAGE_PIN U1 [get_ports start_decrypt]
 set_property IOSTANDARD LVCMOS33 [get_ports start_decrypt]
 
@@ -24,7 +24,6 @@ set_property PACKAGE_PIN U2 [get_ports {an[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {an[*]}]
 
 ## 7-segment display segments (active-low, CA configuration)
-## Correct segment order for Basys3:
 set_property PACKAGE_PIN W7 [get_ports {seg[0]}]  
 set_property PACKAGE_PIN W6 [get_ports {seg[1]}]  
 set_property PACKAGE_PIN U8 [get_ports {seg[2]}]  
@@ -37,6 +36,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {seg[*]}]
 
 
 ## Optional: LED indicators for operation mode
-# set_property PACKAGE_PIN U16 [get_ports encrypt_led]  # If you add status LEDs
+# set_property PACKAGE_PIN U16 [get_ports encrypt_led]  
 # set_property PACKAGE_PIN E19 [get_ports decrypt_led]
 # set_property IOSTANDARD LVCMOS33 [get_ports {encrypt_led decrypt_led}]
