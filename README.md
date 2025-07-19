@@ -126,10 +126,6 @@ AES_FPGA/
 ├── src/                     # Verilog RTL files
 ├── constraints/             # Basys3 XDC file
 ├── images/                  # Diagrams & Output screenshots
-│   ├── design_methodology.png
-│   ├── implementation.png
-│   └── outputs1.png
-│   └── outputs2.png
 └── README.md
 ```
 
