@@ -33,7 +33,7 @@ The AES system is designed with the following modules:
 
 ### 📊 Block Diagram
 
-![Block Diagram](./images/block_diagram.png)
+![Block Diagram](./images/methodology.png)
 
 ---
 
@@ -61,22 +61,23 @@ Key features:
 
 📷 Vivado Implementation Snapshot
 
-![Vivado Implementation](./images/vivado_snapshot.png)
+![Vivado Implementation](./images/implementation.png)
 
 ---
 
 ## 📟 Output Scenarios
 
-| Condition               | Output Description                            | Screenshot |
+| Condition               | Output Description                           | Screenshot |
 |------------------------|-----------------------------------------------|------------|
-| 🔁 Pre-reset           | Display shows dashes or default state         | ✅ Included |
+| 🔁 Pre-reset           | Display shows dashes or default state (8888)  | ✅ Included |
+| 🔁 Input display       | Display cycles through input 128-bit data     | ✅ Included |
 | 🔐 StartEncrypt High   | AES encrypts data and shows ciphertext        | ✅ Included |
 | 🔓 StartDecrypt High   | Ciphertext is decrypted to original plaintext | ✅ Included |
 
 > Below is a combined capture of display outputs under different states:
 
-![Display Output States](./images/display_conditions.png)
-
+![Display Input Conditions](./images/outputs1.png)
+![Display Output Conditions](./images/outputs2.png)
 ---
 
 ## 🗂️ Project Structure
@@ -88,8 +89,9 @@ AES_FPGA/
 ├── constraints/             # Basys3 XDC file
 ├── images/                  # Diagrams & Output screenshots
 │   ├── design_methodology.png
-│   ├── vivado_implementation_on_Basys3_FPGA.png
-│   └── output_conditions.png
+│   ├── implementation.png
+│   └── outputs1.png
+│   └── outputs2.png
 └── README.md
 ```
 
