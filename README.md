@@ -33,7 +33,7 @@ The AES system is designed with the following modules:
 
 ### 📊 Block Diagram
 
-![Block Diagram](./images/methodology.png)
+![Block Diagram](./images/methodology_flow.png)
 
 ---
 
